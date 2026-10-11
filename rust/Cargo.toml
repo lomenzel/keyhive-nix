@@ -15,6 +15,7 @@ futures = { version = "0.3", features = ["executor"] }
 future_form = "0.3.1"
 keyhive_core = { git = "https://github.com/inkandswitch/keyhive", rev = "b7968be799705492428c94226ca28042c733a9e0" }
 keyhive_crypto = { git = "https://github.com/inkandswitch/keyhive", rev = "b7968be799705492428c94226ca28042c733a9e0" }
+beekem = { git = "https://github.com/inkandswitch/keyhive", rev = "b7968be799705492428c94226ca28042c733a9e0" }
 nonempty = "0.12"
 rand_core = "0.6"
 rand_chacha = "0.3"
@@ -23,6 +24,7 @@ serde_json = "1.0"
 sha2 = "0.10"
 
 [profile.release]
+panic = "unwind"
 lto = true
 opt-level = "z"
 codegen-units = 1

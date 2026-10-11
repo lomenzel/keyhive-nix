@@ -469,6 +469,7 @@ name = "keyhive-nix-wasm"
 version = "0.1.0"
 dependencies = [
  "base64",
+ "beekem",
  "bincode",
  "ed25519-dalek",
  "future_form",
